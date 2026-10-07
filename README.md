@@ -28,7 +28,7 @@ This repository contains **book metadata, not the full text of the books**.
 The dataset is provided as:
 
 ```text
-books.json
+complete_gutenberg_catalog.json
 ```
 
 The root of the file is a JSON array containing individual book records.
@@ -143,7 +143,7 @@ The download count reported by Project Gutenberg.
 ```python
 import json
 
-with open("books.json", "r", encoding="utf-8") as file:
+with open("complete_gutenberg_catalog.json", "r", encoding="utf-8") as file:
     books = json.load(file)
 
 print(f"Total books: {len(books)}")
